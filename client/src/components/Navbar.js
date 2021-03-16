@@ -8,8 +8,6 @@ const Navbar = () => {
     const uid = useContext(UidContext);
     const userData = useSelector((state) => state.userReducer);
 
-    console.log("userData" , userData)
-
     return (
         <nav>
             <div className="nav-container">

@@ -18,7 +18,6 @@ module.exports.getUser = async (req, res) => {
     // ou 2eme :
     const user = await UserModel.findOne({ _id: req.params.id }).select("-password")
     if (user) {
-        console.log(user)
         res.status(200).send(user);
     }
     else {
